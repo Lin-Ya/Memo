@@ -25,7 +25,10 @@
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "nodemo": "^1.0.0",
+    "nodemon": "^1.17.2",
+    "onchange": "^3.3.0",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.12"
   }
