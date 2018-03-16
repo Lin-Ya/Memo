@@ -1,0 +1,153 @@
+@baceBlue: color(#048db6);
+
+.sign {
+    display: none;
+}
+.sign.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.modal-login {
+	height: 280px;
+}
+
+.modal-register {
+	overflow: hidden;
+	height: 320px;
+}
+
+.modal-login,
+.modal-register {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	margin: 20px auto;
+	padding: 20px;
+	transform: translate(-50%, -50%);
+	border-radius: 9px;
+	background-color: rgba(255, 255, 255, .79);
+	box-shadow: 0 5px 5px 5px rgba(53, 53, 53, .8);
+}
+
+.register .modal-register,
+.login .modal-login {
+	transition: 1s;
+	transform: translate(-50%, -50%) rotateY(0deg);
+	backface-visibility: hidden;
+}
+
+.login .modal-register,
+.register .modal-login {
+	transition: 1s;
+	transform: translate(-50%, -50%) rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+#tabs .active {
+	color: #000;
+	border-bottom: 3px solid @baceBlue;
+}
+
+.close i {
+	font-size: 17px;
+	position: absolute;
+	float: left;
+	margin-left: 350px;
+	color: #2a3341;
+}
+
+#tabs {
+	font-size: 23px;
+	text-align: center;
+	color: #2a3341;
+}
+
+#tabs a {
+	margin: 0 10px;
+	text-decoration: none;
+	color: #2a3341a7;
+}
+
+#login-form {
+	position: relative;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#login-form form {
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	width: 318px;
+}
+
+#register-form form {
+	position: absolute;
+	top: 80px;
+	left: 40px;
+	width: 318px;
+}
+
+#errormsg {
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	text-align: center;
+	color: #e11f1fc1;
+}
+
+.input-field input {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	margin: 10px auto;
+	padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.input-field i {
+	position: absolute;
+    z-index: 2;
+    margin-top: 22px;
+    margin-left: 6px;
+    line-height: 10px;
+    color: rgb(157, 157, 157);
+}
+
+.input-field-btn input {
+	margin-top: 10px;
+	padding: 6px 10px;
+	border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 15px;
+    width: 65px;
+}
+.input-field-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .github {
+        background-color: @baceBlue;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 4px 8px;
+        border-radius: 3px;
+        &:hover {
+            background-color: lighten(@baceBlue,5%);
+            box-shadow: 0 1px 5px @baceBlue;
+        }
+    }
+}
+.input-field-btn input:hover {
+	padding: 6px 10px;
+	border: none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+}

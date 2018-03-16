@@ -1,3 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 ul,li {
     list-style: none;
+}
+html,body {
+    width: 100vw;
+    height: 100vh;
+}
+button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    font-size: 15px;
+}
+@import "./iconfont.css";
+
+
+.header {
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(to bottom, #000024, #3a3a3a);
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    .left {
+        display: flex;
+        align-items: center;
+        h1 {
+            color: #aaa;
+        }
+        button {
+            @baceRed: color(#b50909);
+            border: 2px solid @baceRed;
+            border-radius: 5px;
+            color: @baceRed;
+            padding: 7px 15px;
+            margin-left: 20px;
+            &:hover {
+                border-color: lighten(@baceRed,15%);;
+                color:  lighten(@baceRed,25%);
+            }
+        }
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        @baceBlue: color(#048db6);
+        button {
+            border: 2px solid @baceBlue;
+            border-radius: 5px;
+            color: @baceBlue;
+            padding: 7px 15px;
+            margin-right: 20px; 
+            &:hover {
+                border-color: lighten(@baceBlue,15%);;
+                color:  lighten(@baceBlue,25%);
+            }
+        }
+        span {
+            cursor: pointer;
+            i {
+                text-align: center;
+                color: @baceBlue;
+                font-size: 38px;
+                &:hover {
+                    border-color: lighten(@baceBlue,15%);;
+                    color:  lighten(@baceBlue,25%);
+            }
+            }
+        }
+    }
+}
+
+.main {
+    height: 100%;
+    padding: 60px 0 40px 0;
+    bottom: 40px;
+    width: 100%;
+    overflow: hidden; 
+    background-color: rgb(70, 70, 70);
+    // background-image: url('../images/main-bg.jpg');
+    .container {
+        height: 100%;
+        width: 110%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    @import "./login.less";
+}
+
+.footer {
+    height: 40px;
+    width: 100%;
+    background-color: #ccc;
+    position: fixed;
+    bottom: 0;
 }

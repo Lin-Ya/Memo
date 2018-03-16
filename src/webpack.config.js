@@ -30,6 +30,10 @@ module.exports = [
                 {
                     test: /\.(woff|svg|eot|ttf|otf)(\??.*)?/,
                     loader: ['url-loader?name=fonts/[name].[md5:hash:hex:7].[ext]']
+                },
+                {
+                    test: /\.(png|jpg)$/,
+                    loader: 'url-loader?limit=8192&name=img/[hash:8].[name].[ext]'
                 }
             ]
         },

@@ -1,1 +1,1 @@
-require('mod/toast.js')
+require('less/index.less')
