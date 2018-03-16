@@ -1,0 +1,44 @@
+.node {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 20px;
+    width: 200px;
+    min-height: 200px;
+    position: relative;
+    transform: rotate(2deg);
+    background:linear-gradient(35deg,transparent 1.5em,yellow 0);
+    &:hover {
+        .delete {
+            visibility: visible;
+        }
+    }
+    .sticky {
+        position: absolute;
+        top: -12px;
+        left: 50px;
+        width: 95px;
+        height: 25px;
+        background: #56ee445f;
+        transform: rotate(-3deg);
+        border-radius: 6px/10px 1px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    }    
+    .delete {
+        visibility: hidden;
+        text-align: right;
+        float: right;
+        margin: 8px;
+        cursor: pointer;
+        color: rgba(103, 103, 103, 0.769);
+    }
+    .node-content {
+        width: 170px;
+        min-height: 150px;
+        margin: -10px auto 15px;
+    }
+    .node-date {
+    font-size: 15px;
+    text-align: right;
+    padding-right: 15px;
+    }
+}
