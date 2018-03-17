@@ -1,9 +1,9 @@
 
 @font-face {font-family: "iconfont";
-  src: url('../font/iconfont.eot?t=1521179034911'); /* IE9*/
-  src: url('../font/iconfont.eot?t=1521179034911#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../font/iconfont.ttf?t=1521179034911') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../font/iconfont.svg?t=1521179034911#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('../font/iconfont.eot?t=1521281411519'); /* IE9*/
+  src: url('../font/iconfont.eot?t=1521281411519#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.ttf?t=1521281411519') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg?t=1521281411519#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -27,6 +27,8 @@
 .icon-dui:before { content: "\e613"; }
 
 .icon-plus-select-down:before { content: "\e710"; }
+
+.icon-close:before { content: "\e6dd"; }
 
 .icon-top:before { content: "\e7cf"; }
 

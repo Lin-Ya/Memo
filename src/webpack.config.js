@@ -19,6 +19,7 @@ module.exports = [
             },
             extensions: ['.less']
         },
+        devtool: 'source-map',
         module: {
             rules: [
                 {
