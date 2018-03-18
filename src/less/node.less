@@ -1,12 +1,12 @@
+
 .node {
-    display: flex;
-    flex-direction: column;
+    position: absolute;
     margin: 20px 0 0 20px;
     width: 200px;
     min-height: 200px;
-    position: relative;
     transform: rotate(2deg);
     background:linear-gradient(35deg,transparent 1.5em,yellow 0);
+    transition: all 0.5s;
     &:hover {
         .delete {
             visibility: visible;
@@ -19,7 +19,7 @@
         width: 95px;
         height: 25px;
         background: #56ee445f;
-        transform: rotate(-3deg);
+        transform: rotate(-2deg);
         border-radius: 6px/10px 1px;
         box-shadow: 0 1px 1px rgba(0,0,0,.3);
     }    
@@ -34,7 +34,7 @@
     .node-content {
         width: 170px;
         min-height: 50px;
-        margin: -10px auto 15px;
+        margin: 20px auto 15px;
     }
     .node-date {
     font-size: 15px;

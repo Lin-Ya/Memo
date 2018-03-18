@@ -64,14 +64,13 @@ button {
   font-size: 15px;
 }
 .node {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
   margin: 20px 0 0 20px;
   width: 200px;
   min-height: 200px;
-  position: relative;
   transform: rotate(2deg);
   background: linear-gradient(35deg, transparent 1.5em, yellow 0);
+  transition: all 0.5s;
 }
 .node:hover .delete {
   visibility: visible;
@@ -83,7 +82,7 @@ button {
   width: 95px;
   height: 25px;
   background: #56ee445f;
-  transform: rotate(-3deg);
+  transform: rotate(-2deg);
   border-radius: 0.6px 1px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
@@ -98,7 +97,7 @@ button {
 .node .node-content {
   width: 170px;
   min-height: 50px;
-  margin: -10px auto 15px;
+  margin: 20px auto 15px;
 }
 .node .node-date {
   font-size: 15px;
@@ -170,6 +169,7 @@ button {
   background-color: #464646;
 }
 .main .container {
+  position: relative;
   height: 100%;
   width: 110%;
   overflow-y: scroll;
@@ -178,10 +178,12 @@ button {
 .main .sign {
   display: none;
   height: 100%;
+  transition: all 0.5s;
 }
 .main .sign.active {
   display: block;
   background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s;
 }
 .main .modal-login {
   height: 280px;
