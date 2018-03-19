@@ -23,5 +23,3 @@ Event.on('waterfall', function () {
 })
 
 window.Note = Note;
-
-new Note();
