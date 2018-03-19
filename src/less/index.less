@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: #fff;
+}
 ul,li {
     list-style: none;
 }
@@ -73,6 +77,24 @@ button {
                     border-color: lighten(@baceBlue,15%);;
                     color:  lighten(@baceBlue,25%);
             }
+            }
+        }
+        .loginSpan {
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin-right: 5px
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                a {
+                    color: rgb(169, 39, 39);
+                }
             }
         }
     }

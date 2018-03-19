@@ -48,6 +48,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
 ul,
 li {
   list-style: none;
@@ -161,6 +165,24 @@ button {
 .header .right span i:hover {
   border-color: #0dc3fa;
   color: #3fcffb;
+}
+.header .right .loginSpan {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.header .right .loginSpan img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.header .right .loginSpan div {
+  display: flex;
+  flex-direction: column;
+}
+.header .right .loginSpan div a {
+  color: #a92727;
 }
 .main {
   height: 100%;
