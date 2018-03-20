@@ -44,8 +44,8 @@ Note.sync()
 
 
 
-//Note.drop();
-//Note.sync({force: true})
+Note.drop();
+// Note.sync({force: true})
 // // force: true will drop the table if it already exists
 // Note.sync({force: true}).then(function () {
 //   // Table created

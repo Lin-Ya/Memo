@@ -2,6 +2,7 @@
   border: 1px solid red;
   position: fixed;
   left: 50%;
+  transform: translateX(-50%);
   bottom: 60px;
   background-color: #fff;
   padding: 5px 10px;

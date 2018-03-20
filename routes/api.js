@@ -62,13 +62,13 @@ router.post('/notes/delete', function (req, res, next) {
     return res.send({ status: 1, errorMsg: '请先登录' })
   }
 
-  var noteId = req.body.id
+  var noteId = req.body.id 
   var username = req.session.user.username;
 
-  Note.destroy({ where: { id: noteId, username: username } }).then(function (deleteLen) {
-    if (deleteLen === 0) {
-      return res.send({ status: 1, errorMsg: '你没有权限' });
-    }
+  Note.destroy({ where: { id: noteId, username: username } }).then(function (deleteLe) {
+    
+  
+   
     res.send({ status: 0 })
   }).catch(function (e) {
     res.send({ status: 1, errorMsg: '数据库异常或者你没有权限' });
