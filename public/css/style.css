@@ -142,7 +142,6 @@ button {
 }
 .header .right {
   display: flex;
-  align-items: center;
 }
 .header .right button {
   border: 2px solid #048db6;
@@ -185,6 +184,20 @@ button {
 .header .right .loginSpan div a {
   color: #a92727;
 }
+.header .right .github {
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #b50909;
+  border-radius: 5px;
+  color: #b50909;
+  padding: 7px 15px;
+}
+.header .right .github a {
+  color: #b50909;
+}
+.header .right .github:hover {
+  box-shadow: 0 1px 5px #b50909;
+}
 .main {
   height: 100%;
   padding: 60px 0 40px 0;
@@ -199,143 +212,6 @@ button {
   width: 110%;
   overflow-y: scroll;
   overflow-x: hidden;
-}
-.main .sign {
-  display: none;
-  height: 100%;
-  transition: all 0.5s;
-}
-.main .sign.active {
-  display: block;
-  background-color: rgba(0, 0, 0, 0);
-  transition: all 0.5s;
-}
-.main .modal-login {
-  height: 280px;
-}
-.main .modal-register {
-  overflow: hidden;
-  height: 320px;
-}
-.main .modal-login,
-.main .modal-register {
-  z-index: 5;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  transform: translate(-50%, -50%);
-  border-radius: 9px;
-  background-color: rgba(255, 255, 255, 0.79);
-  box-shadow: 0 5px 5px 5px rgba(53, 53, 53, 0.8);
-}
-.main .register .modal-register,
-.main .login .modal-login {
-  transition: 1s;
-  transform: translate(-50%, -50%) rotateY(0deg);
-  backface-visibility: hidden;
-}
-.main .login .modal-register,
-.main .register .modal-login {
-  transition: 1s;
-  transform: translate(-50%, -50%) rotateY(180deg);
-  backface-visibility: hidden;
-}
-.main #tabs .active {
-  color: #000;
-  border-bottom: 3px solid #048db6;
-}
-.main .close i {
-  font-size: 17px;
-  position: absolute;
-  float: left;
-  margin-left: 350px;
-  color: #2a3341;
-}
-.main #tabs {
-  font-size: 23px;
-  text-align: center;
-  color: #2a3341;
-}
-.main #tabs a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #2a3341a7;
-}
-.main #login-form {
-  position: relative;
-  height: 200px;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-.main #login-form form {
-  position: absolute;
-  top: 25px;
-  left: 20px;
-  width: 318px;
-}
-.main #register-form form {
-  position: absolute;
-  top: 80px;
-  left: 40px;
-  width: 318px;
-}
-.main #errormsg {
-  display: block;
-  margin-top: 10px;
-  text-align: center;
-  color: #e11f1fc1;
-}
-.main .input-field input {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  margin: 10px auto;
-  padding: 10px 30px;
-  outline: none;
-  border: none;
-  border-radius: 3px;
-}
-.main .input-field i {
-  position: absolute;
-  z-index: 2;
-  margin-top: 22px;
-  margin-left: 6px;
-  line-height: 10px;
-  color: #9d9d9d;
-}
-.main .input-field-btn input {
-  margin-top: 10px;
-  padding: 6px 10px;
-  border: none;
-  outline: none;
-  border-radius: 3px;
-  font-size: 15px;
-  width: 65px;
-}
-.main .input-field-btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main .input-field-btn .github {
-  background-color: #048db6;
-  color: #fff;
-  cursor: pointer;
-  margin-top: 10px;
-  padding: 4px 8px;
-  border-radius: 3px;
-}
-.main .input-field-btn .github:hover {
-  background-color: #05a0cf;
-  box-shadow: 0 1px 5px #048db6;
-}
-.main .input-field-btn input:hover {
-  padding: 6px 10px;
-  border: none;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
 .footer {
   height: 40px;
