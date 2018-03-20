@@ -6,7 +6,6 @@ var WaterFall = require('mod/waterfall.js');
 var Note = require('mod/note.js').Note;
 var NoteManager = require('mod/note-manager.js').NoteManager
 WaterFall.init($('.container'))
-login.init();
 
 
 NoteManager.load()
@@ -20,5 +19,3 @@ $('.left .remove').on('click', function () {
 Event.on('waterfall', function () {
     WaterFall.init($('.container'));
 })
-
-window.Note = Note;

@@ -26,7 +26,7 @@ button {
 .header {
     height: 60px;
     width: 100%;
-    background: linear-gradient(to bottom, #000024, #3a3a3a);
+    background: linear-gradient(to bottom, hsl(240, 100%, 7%), hsla(0, 92%, 5%, 0.934));
     display: flex;
     position: fixed;
     top: 0;
@@ -116,26 +116,17 @@ button {
 
 .main {
     height: 100%;
-    padding: 60px 0 40px 0;
-    bottom: 40px;
+    padding-top: 60px;
+    bottom: 0px;
     width: 100%;
     overflow: hidden; 
-    background-color: rgb(70, 70, 70);
-    // background-image: url('../images/main-bg.jpg');
     .container {
         position: relative;
         height: 100%;
         width: 110%;
         overflow-y: scroll;
         overflow-x: hidden;
+        background: linear-gradient(to right top, rgba(17, 20, 33, 0.721), rgba(84, 54, 10, 0.721)), url(../images/background.jpg) center center no-repeat;
+	    background-size: cover;
     }
-    // @import "./login.less";
-}
-
-.footer {
-    height: 40px;
-    width: 100%;
-    background-color: #ccc;
-    position: fixed;
-    bottom: 0;
 }

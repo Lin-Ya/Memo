@@ -114,7 +114,7 @@ button {
 .header {
   height: 60px;
   width: 100%;
-  background: linear-gradient(to bottom, #000024, #3a3a3a);
+  background: linear-gradient(to bottom, #000024, rgba(24, 1, 1, 0.934));
   display: flex;
   position: fixed;
   top: 0;
@@ -200,11 +200,10 @@ button {
 }
 .main {
   height: 100%;
-  padding: 60px 0 40px 0;
-  bottom: 40px;
+  padding-top: 60px;
+  bottom: 0px;
   width: 100%;
   overflow: hidden;
-  background-color: #464646;
 }
 .main .container {
   position: relative;
@@ -212,13 +211,8 @@ button {
   width: 110%;
   overflow-y: scroll;
   overflow-x: hidden;
-}
-.footer {
-  height: 40px;
-  width: 100%;
-  background-color: #ccc;
-  position: fixed;
-  bottom: 0;
+  background: linear-gradient(to right top, rgba(17, 20, 33, 0.721), rgba(84, 54, 10, 0.721)), url(../img/a0c8c205.background.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map*/
