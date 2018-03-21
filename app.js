@@ -14,18 +14,19 @@ var all = require('./routes/all');
 
 var app = express();
 
-var bs = require('browser-sync').create();
-app.listen(3000, function () {
-  bs.init({
-    open: false,
-    ui: false,
-    notify: false,
-    proxy: 'localhost:3000',
-    files: ['./public/**/**.*', './**/*.ejs'],
-    port: 8080
-  });
-  console.log('App (dev) is going to be running on port 8080 (by browsersync).');
-});
+// 配合nodemon 开发过程实现自动重启服务器
+// var bs = require('browser-sync').create();
+// app.listen(3000, function () {
+//   bs.init({
+//     open: false,
+//     ui: false,
+//     notify: false,
+//     proxy: 'localhost:3000',
+//     files: ['./public/**/**.*', './**/*.ejs'],
+//     port: 8080
+//   });
+//   console.log('App (dev) is going to be running on port 8080 (by browsersync).');
+// });
 
 
 
