@@ -218,7 +218,7 @@ button {
   width: 110%;
   overflow-y: scroll;
   overflow-x: hidden;
-  background: linear-gradient(to right top, rgba(17, 20, 33, 0.721), rgba(84, 54, 10, 0.721)), url(img/a0c8c205.background.jpg) center center no-repeat;
+  background: linear-gradient(to right top, rgba(17, 20, 33, 0.721), rgba(84, 54, 10, 0.721)), url(../img/a0c8c205.background.jpg) center center no-repeat;
   background-size: cover;
 }
 
