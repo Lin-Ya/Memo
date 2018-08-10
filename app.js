@@ -41,7 +41,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//实现session的认真
+//实现session的认证
 app.use(cookieParser());
 app.use(session({ secret: 'sessionsecret' }));
 app.use(passport.initialize());
